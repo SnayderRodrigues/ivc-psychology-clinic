@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .services {
-    background-color: var(--bg);
+    background-color: var(--yellow);
     width: 100%;
     padding: 120px 0;
 
@@ -88,7 +88,7 @@
 
         &:hover {
             transform: translateX(-24px);
-            box-shadow: 8px 8px 0 0 var(--green), 16px 16px 0 0 var(--purple);
+            box-shadow: 8px 8px 0 0 var(--blue), 16px 16px 0 0 var(--orange);
         }
 
         h3 {
@@ -99,7 +99,7 @@
         }
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
     }
     &__button-wrapper {

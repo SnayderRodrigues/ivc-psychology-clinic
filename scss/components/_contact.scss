@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .contact {
-    background: linear-gradient(45deg, rgba(245,251,255,1) 0%, rgb(226, 253, 255) 40%, rgb(234, 218, 252) 100%);
+    background-color: var(--blue);
     padding: 120px 0;
 
     @include u.breakpoint-down(xsmall) {
@@ -32,7 +32,6 @@
 
         &:hover {
             transform: translateX(4px);
-            box-shadow: 8px 8px 0 0 var(--green), 16px 16px 0 0 var(--purple);
         }
 
 
@@ -76,7 +75,6 @@
 
         &:hover {
             transform: translateX(4px);
-            box-shadow: 8px 8px 0 0 var(--green), 16px 16px 0 0 var(--purple);
         }
 
         @include u.breakpoint-down(midlarge) {

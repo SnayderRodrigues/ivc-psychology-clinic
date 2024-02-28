@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .footer {
-    background-color: var(--bg);
+    background-color: var(--yellow);
     // border-top: 4px solid var(--black);
     // padding-bottom: 64px;
 
@@ -38,6 +38,7 @@
         font-family: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
         font-size: u.rem(80);
         font-weight: bold;
+        color: var(--black);
         
         span {
             color: var(--green)
@@ -54,7 +55,7 @@
         }
         &:hover {
             path {
-                fill: var(--green);
+                fill: var(--orange);
             }
         }
     }
@@ -86,20 +87,21 @@
     &__navigation {
         display: flex;
         flex-direction: column;
-        // font-weight: 600;
+        color: var(--black);
         strong {
             margin-bottom: 0.75rem;
             font-size: 1.5rem;
         }
-        a {
-            transition: color 200ms linear;
-        }
-        a:hover {
-            color: var(--green);
-        }
-
         @include u.breakpoint-down(xsmall) {
             align-items: center;
+        }
+    }
+    &__navigation-link {
+        color: var(--black);
+        transition: color 200ms linear;
+
+        &:hover {
+            color: var(--orange);
         }
     }
 }

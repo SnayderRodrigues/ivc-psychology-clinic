@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .call-to-action {
-    background: linear-gradient(45deg, rgba(245,251,255,1) 0%, rgb(226, 253, 255) 40%, rgb(234, 218, 252) 100%);
+    background-color: var(--yellow);
 
     &__wrapper {
         display: flex;
@@ -21,46 +21,69 @@
     }
     &__image-wrapper {
         width: 50%;
+        height: 700px;
+        position: relative;
+        border-radius: 1.25rem;
+        overflow: hidden;
+
+        h3 {
+            font-size: 3rem;
+            color: var(--white);
+            position: absolute;
+            top: 10%;
+            left: 5%;
+        }
+
+        &:hover .call-to-action__image {
+            scale: 1.1;
+        }
+        &:hover > .call-to-action__content-1, &:hover > .call-to-action__content-2 {
+            opacity: 1;
+        }
+        
+
     }
     &__image {
         width: 100%;
         height: 700px;
         object-fit: cover;
-        border-radius: 1.25rem;
-        transition: box-shadow 200ms ease-in-out;
-        
-
-        &:hover {
-            box-shadow: 8px 8px 0 0 var(--green), 16px 16px 0 0 var(--purple);
-        }
-
+        transition: scale 200ms linear;
     }
-    &__content {
-        grid-row: 2 / 4;
-        grid-column: 1 / 2;
+    &__content-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--yellow);
+        width: 100%;
+        height: 100%;
+        background-color: var(--blue);
         padding: 32px;
-        border: 4px solid var(--black);
-        box-shadow: 8px 8px 0 var(--black);
+        border-radius: 1.25rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
         
-        @include u.breakpoint-down(small) {
-            padding: 32px 16px;
-        }
-
-        @include u.breakpoint-up(medium) {
-            grid-row: 2 / span 2;
-            grid-column: 2 / span 2;
-            padding: 48px 56px;
-            text-align: start;
-        }
-        
-        @include u.breakpoint-up(large) {
-            grid-row: 2 / span 1;
-            padding: 64px 128px;
-        }
+    }
+    &__content-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--orange);
+        padding: 32px;
+        border-radius: 1.25rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+       
     }
     &__headline {
         text-align: center;

@@ -1,8 +1,8 @@
 @use '../util/' as u;
 
 .features {
-    background-color: var(--bg);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--white);
     padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
     padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
     
@@ -37,7 +37,8 @@
         gap: u.rem(16) 32px;
         justify-items: center;
         text-align: center;
-        max-width: u.rem(573);
+        // max-width: u.rem(573);
+        max-width: u.rem(373);
 
         @media (899px >= width >= 700px) {
             grid-template-columns: u.rem(48) auto;
@@ -54,7 +55,7 @@
         align-self: center;
         width: 84px;
         height: 84px;
-        background-color: var(--green);
+        background-color: var(--orange);
         border-radius: 50%;
         margin-bottom: u.rem(8);
         // padding: 9px 18px;
