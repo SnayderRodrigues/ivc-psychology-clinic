@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .call-to-action {
-    background-color: var(--bg);
+    background: linear-gradient(45deg, rgba(245,251,255,1) 0%, rgb(226, 253, 255) 40%, rgb(234, 218, 252) 100%);
 
     &__wrapper {
         display: flex;
@@ -27,7 +27,12 @@
         height: 700px;
         object-fit: cover;
         border-radius: 1.25rem;
-        box-shadow: 8px 8px 0 0 var(--black);
+        transition: box-shadow 200ms ease-in-out;
+        
+
+        &:hover {
+            box-shadow: 8px 8px 0 0 var(--green), 16px 16px 0 0 var(--purple);
+        }
 
     }
     &__content {
