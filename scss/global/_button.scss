@@ -19,26 +19,6 @@
   &:hover {
     cursor: pointer;
       color: var(--white);
-  }
-
-
-  &::after{
-    background-color: var(--orange);
-    content: '';
-    display: block;
-    height: 105%;
-    width: 110%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-110%, 0);
-    border: none;
-    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-    will-change: transform;
-    z-index: -1;
-  }  
-  
-  &:hover::after {
-    transform: translate(0, 0);
+      background-color: var(--orange);
   }
 }

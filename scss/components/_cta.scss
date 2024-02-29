@@ -26,12 +26,22 @@
         border-radius: 1.25rem;
         overflow: hidden;
 
-        h3 {
+        .box-1 {
             font-size: 3rem;
             color: var(--white);
             position: absolute;
             top: 10%;
             left: 5%;
+            z-index: 2;
+        }
+
+        .box-2 {
+            font-size: 3rem;
+            color: var(--white);
+            position: absolute;
+            top: 85%;
+            right: 5%;
+            z-index: 2;
         }
 
         &:hover .call-to-action__image {
