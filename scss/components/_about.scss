@@ -77,6 +77,36 @@
         background-color: var(--white);
         border-radius: 1.25rem;
         padding: 24px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__description-text-1 > * {
+        position: relative;
+        z-index: 2;
+    }
+    &__description-text-1::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: var(--blue);
+        border-radius: 50%;
+        position: absolute;
+        top: 65%;
+        left: -15%;
+        z-index: 0;
+        opacity: 0.3;
+    }
+    &__description-text-1::after {
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: var(--orange);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -20%;
+        z-index: 1;
+        opacity: 0.3;
     }
     &__description-text-2 {
         display: flex;
@@ -92,6 +122,24 @@
         background-color: var(--white);
         border-radius: 1.25rem;
         padding: 24px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__description-mission > * {
+        position: relative;
+        z-index: 2;
+    }
+    &__description-mission::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: var(--orange);
+        border-radius: 50%;
+        position: absolute;
+        top: 70%;
+        right: -25%;
+        z-index: 0;
+        opacity: 0.3;
     }
     &__description-values {
         width: 50%;
@@ -102,6 +150,24 @@
         background-color: var(--white);
         border-radius: 1.25rem;
         padding: 24px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__description-values > * {
+        position: relative;
+        z-index: 2;
+    }
+    &__description-values::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: var(--blue);
+        border-radius: 50%;
+        position: absolute;
+        top: 70%;
+        right: -25%;
+        z-index: 0;
+        opacity: 0.3;
     }
     &__image-wrapper {
         width: 40%;

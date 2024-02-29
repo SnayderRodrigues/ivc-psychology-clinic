@@ -3,8 +3,7 @@
 .features {
     background-color: var(--blue);
     color: var(--white);
-    padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
-    padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
+    padding: 120px 0;
     
 
     &__h2-wrapper {

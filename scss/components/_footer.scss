@@ -99,6 +99,7 @@
     &__navigation-link {
         color: var(--black);
         transition: color 200ms linear;
+        min-width: max-content;
 
         &:hover {
             color: var(--orange);

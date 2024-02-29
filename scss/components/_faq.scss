@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .faq {
-    padding: 120px 0;
+    padding: 0 0 120px 0;
     background-color: var(--yellow);
 
     @include u.breakpoint-down(xsmall) {
