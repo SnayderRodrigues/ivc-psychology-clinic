@@ -178,6 +178,11 @@ h3 {
 .header.opaque {
   padding-block: 12px 12px;
 }
+@media (max-width: 47.99875em) {
+  .header {
+    padding-block: 12px 12px;
+  }
+}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -240,9 +245,6 @@ h3 {
   height: 400px;
   opacity: 1;
   scale: 1;
-  -webkit-user-select: all;
-     -moz-user-select: all;
-          user-select: all;
   pointer-events: all;
   visibility: visible;
 }
