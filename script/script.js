@@ -4,19 +4,32 @@ function show(anything){
 
 let menu = document.querySelector('.header__menu');
 let items = document.querySelector('.header__list-div');
+let link = document.querySelector('.header__link');
+
+function closeMenu(event) {
+    if (!items.contains(event.target) && !menu.contains(event.target)) {
+        items.classList.remove('open-menu');
+        menu.classList.remove('open-menu');
+        document.removeEventListener('click', closeMenu);
+    }
+}
 
 menu.onclick = function(){
-menu.classList.toggle('open-menu');
-items.classList.toggle('open-menu');
+    menu.classList.toggle('open-menu');
+    items.classList.toggle('open-menu');
+    items.removeAttribute('style');
+    document.addEventListener('click', closeMenu);
+};
 
-items.removeAttribute('style');
+items.onclick = function(event){
+    event.stopPropagation();
+};
 
-}
+link.onclick = function(){
+    items.classList.remove('open-menu');
+    menu.classList.remove('open-menu');
+};
 
-items.onclick = function(){
-items.classList.remove('open-menu');
-menu.classList.remove('open-menu');
-}
 
 window.addEventListener('resize', function() {
     if (window.innerWidth < 768) {
