@@ -4,7 +4,7 @@ function show(anything){
 
 let menu = document.querySelector('.header__menu');
 let items = document.querySelector('.header__list-div');
-let link = document.querySelector('.header__link');
+let links = document.querySelectorAll('.header__link');
 
 function closeMenu(event) {
     if (!items.contains(event.target) && !menu.contains(event.target)) {
@@ -25,10 +25,12 @@ items.onclick = function(event){
     event.stopPropagation();
 };
 
-link.onclick = function(){
-    items.classList.remove('open-menu');
-    menu.classList.remove('open-menu');
-};
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        items.classList.remove('open-menu');
+        menu.classList.remove('open-menu');
+    });
+});
 
 
 window.addEventListener('resize', function() {
