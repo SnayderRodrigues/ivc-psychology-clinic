@@ -63,6 +63,7 @@
         }
         @include u.breakpoint-down(small) {
             width: 100%;
+            opacity: 1;
         }
     }
     &__image {
@@ -98,6 +99,7 @@
 
         @include u.breakpoint-down(small) {
             padding: 32px 16px;
+            opacity: 1;
         }
     }
     &__content-1 {
@@ -106,7 +108,9 @@
     }
     &__content-2 {
         justify-content: flex-start;
+        align-items: flex-end;
         background-color: var(--orange);
+        text-align: right;
     }
     &__headline {
         text-align: center;
