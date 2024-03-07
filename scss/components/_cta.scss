@@ -49,6 +49,10 @@
             top: 75%;
             right: 5%;
             z-index: 2;
+
+            @include u.breakpoint-down(small) {
+                top: 10%;
+            }
         }
 
         &:hover .call-to-action__image {
@@ -111,6 +115,10 @@
         align-items: flex-end;
         background-color: var(--orange);
         text-align: right;
+
+        @include u.breakpoint-down(small) {
+            justify-content: flex-end;
+        }
     }
     &__headline {
         text-align: center;

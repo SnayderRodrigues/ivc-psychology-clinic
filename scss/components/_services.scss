@@ -92,6 +92,7 @@
             }
             @include u.breakpoint-down(xsmall) {
                 box-shadow: none;
+                transform: translateX(0px);
             }
         }
 
