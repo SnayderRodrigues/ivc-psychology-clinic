@@ -47,6 +47,13 @@
         text-align: center;
         // max-width: u.rem(573);
         max-width: u.rem(373);
+        padding: 2rem;
+        border-radius: 1.25rem;
+        transition: background-color 200ms linear;
+
+        &:hover {
+            background-color: hsl(210, 70%, 34%);
+        }
 
         // @media (899px >= width >= 700px) {
         //     grid-template-columns: u.rem(148) auto;
