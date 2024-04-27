@@ -2,7 +2,7 @@
 
 .faq {
     padding: 0 0 120px 0;
-    background-color: var(--yellow);
+    background-color: var(--white);
 
     @include u.breakpoint-down(xsmall) {
         padding: 0 0 80px 0;

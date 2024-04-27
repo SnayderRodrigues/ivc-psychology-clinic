@@ -568,7 +568,7 @@ h3 {
 
 .about {
   padding: 120px 0 120px 0;
-  background-color: var(--yellow);
+  background-color: var(--white);
   color: var(--black);
   position: relative;
 }
@@ -806,7 +806,7 @@ h3 {
 }
 
 .services {
-  background-color: var(--yellow);
+  background-color: var(--white);
   width: 100%;
   padding: 0 0 120px 0;
 }
@@ -987,7 +987,7 @@ h3 {
 }
 
 .call-to-action {
-  background-color: var(--yellow);
+  background-color: var(--white);
 }
 .call-to-action__wrapper {
   display: flex;
@@ -1138,7 +1138,7 @@ h3 {
 
 .faq {
   padding: 0 0 120px 0;
-  background-color: var(--yellow);
+  background-color: var(--white);
 }
 @media (max-width: 26.62375em) {
   .faq {
@@ -1465,7 +1465,7 @@ h3 {
 }
 
 .footer {
-  background-color: var(--yellow);
+  background-color: var(--white);
 }
 .footer__wrapper {
   display: flex;
