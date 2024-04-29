@@ -1,31 +1,56 @@
 @use '../util/' as u;
 
 .features {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--white);
     padding: 120px 0;
     
     @include u.breakpoint-down(xsmall) {
         padding: 80px 0;
     }
 
-    &__h2-wrapper {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        margin-bottom: 8rem;
+
+        @include u.breakpoint-down(small) {
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+    &__image-wrapper {
+        width: 50%;
+        height: auto;
+
+        @include u.breakpoint-down(small) {
+            width: 100%;
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        max-height: 700px;
+        object-fit: cover;
+        border-radius: 1.125rem;
+
+        @include u.breakpoint-down(small) {
+            width: 100%;
+            max-height: 600px;
+        }
+    }
+    &__content-wrapper {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
     }
-    &__h2 {
-        text-align: center;
-        max-width: 900px;
-        margin-bottom: 50px;
+    &__title {
+        margin-bottom: 2rem;
     }
-    &__p {
-        text-align: center;
-        max-width: 900px;
-        margin-bottom: 20px;
+    &__text {
+        margin-bottom: 2rem;
     }
-    &__wrapper {
+    &__card-wrapper {
         display: grid;
         gap: 40px 26px;
         justify-content: center;
@@ -36,54 +61,32 @@
         @include u.breakpoint-up(large) {
             grid-template-columns: repeat(3, 1fr);
         }
-        // @include u.breakpoint-down(small) {
-        //     grid-template-columns: 1fr;
-        // }
     }
     &__item {
         display: grid;
-        gap: u.rem(16) 32px;
-        justify-items: center;
-        text-align: center;
-        // max-width: u.rem(573);
+        gap: u.rem(16);
+        justify-items: left;
         max-width: u.rem(373);
+        color: var(--white);
+        background-color: var(--blue);
         padding: 2rem;
-        border-radius: 1.25rem;
+        border-radius: 1.125rem;
         transition: background-color 200ms linear;
 
         &:hover {
             background-color: hsl(210, 70%, 34%);
         }
-
-        // @media (899px >= width >= 700px) {
-        //     grid-template-columns: u.rem(148) auto;
-        //     grid-template-rows: auto auto;
-        //     text-align: left;
-        //     justify-items: start;
-        // }
     }
-    &__item-number {
+    &__item-icon {
         display: inline-grid;
         grid-column: 1 / 2;
         grid-row: 1 / 3;
         place-items: center;
         align-self: center;
-        width: 84px;
-        height: 84px;
+        width: 40px;
+        height: 40px;
         background-color: var(--orange);
         border-radius: 50%;
         margin-bottom: u.rem(8);
-        // padding: 9px 18px;
-
-        // @include u.breakpoint-up(large) {
-        //     width: u.rem(56);
-        //     height: u.rem(56);
-        // }
     }
-    // &__item-title {
-
-    // }
-    // &__item-description {
-
-    // }
 }
