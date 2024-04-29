@@ -1,5 +1,35 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
-// .call-to-action {
- 
-// }
+.cta {
+  color: var(--white);
+  background-color: var(--blue);
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 120px 0;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+  }
+  &__button {
+    width: fit-content;
+    color: var(--black);
+    background-color: var(--white);
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
