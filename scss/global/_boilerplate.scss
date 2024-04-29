@@ -95,8 +95,12 @@ textarea:focus-visible {
   // outline: 2px solid red;
   width: min(100% - u.rem(64), u.rem(1400));
   margin-inline: auto;
+
   @include u.breakpoint-down(small) {
-    width: min(100% - u.rem(32), u.rem(1400));
+    width: min(100% - u.rem(54), u.rem(1400));
+  }
+  @include u.breakpoint-down(xsmall) {
+    width: min(100% - u.rem(40), u.rem(1400));
   }
 }
 

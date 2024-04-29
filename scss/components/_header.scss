@@ -6,17 +6,11 @@
   z-index: 1000;
   width: 100%;
   background-color: var(--white);
-  // color: var(--color-white);
-  // border-bottom: 4px solid var(--black);
   padding-block: 12px 12px;
   border-bottom: 2px solid var(--gray);
   transition: all 200ms linear;
 
   &.opaque {
-    padding-block: 12px 12px;
-  }
-
-  @include u.breakpoint-down(small) {
     padding-block: 12px 12px;
   }
 
@@ -41,7 +35,7 @@
     }
     @include u.breakpoint-down(small) {
       flex-grow: 0;
-      gap: 16px;
+      gap: 24px;
     }
   }
   &__list-div {
@@ -134,14 +128,10 @@
     background: none;
     border: none;
     padding: 0;
-    margin-right: 8px;
     cursor: pointer;
 
     @include u.breakpoint-down(small) {
       display: block;
-    }
-    @include u.breakpoint-down(small) {
-      margin: 8px;
     }
   }
   &__menu-button-1 {
