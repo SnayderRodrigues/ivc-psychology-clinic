@@ -54,17 +54,14 @@
   }
   &__question-div {
     background-color: var(--white);
-    list-style: none;
     width: 100%;
     padding: 18px 0;
     border-bottom: 2px solid var(--gray);
-    margin-bottom: 12px;
     transition: padding 300ms cubic-bezier(0.23, 1, 0.32, 1),
       background-color 300ms linear, box-shadow 200ms ease-in-out;
 
     @include u.breakpoint-down(small) {
       padding: 16px 0;
-      margin-bottom: 12px;
     }
   }
   &__question-div:nth-child(1) {
@@ -84,6 +81,7 @@
       padding: 10px 0;
     }
     @include u.breakpoint-down(xsmall) {
+      min-height: 64.06px;
       padding: 0px;
     }
   }
@@ -116,7 +114,6 @@
     }
   }
   &__question.active {
-
     @include u.breakpoint-down(xsmall) {
       padding: 0px;
     }
