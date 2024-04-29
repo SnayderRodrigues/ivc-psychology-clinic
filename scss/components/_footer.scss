@@ -1,131 +1,56 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
 .footer {
-    background-color: var(--white);
-    // border-top: 4px solid var(--black);
-    // padding-bottom: 64px;
+  background-color: var(--white);
+  border-top: 2px solid var(--gray);
+  padding: 120px 0 80px;
 
-    // @include u.breakpoint-up(medium) {
-    //     padding-bottom: 120px;
-    // }
-    
-    // @include u.breakpoint-up(large) {
-    //     padding-bottom: 120px;
-    // }
-    
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 56px 0;
+  &__wrapper {
+    display: flex;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 2rem;
+  }
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 6rem;
+  }
+  &__logo {
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  &__address, &__contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
 
-        @include u.breakpoint-down(small) {
-            flex-direction: column;
-            gap: 40px;
-            align-items: flex-start;
-        }
-        @include u.breakpoint-down(xsmall) {
-            align-items: center;
-        }
+    span:first-of-type {
+        font-weight: 600;
     }
-    &__logo-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+  }
+  &__contact span:not(:first-child) {
+    text-decoration: underline;
+  }
+  &__links-wrapper {
+    display: flex;
+    gap: 6rem;
+  }
+  &__links-sitemap, &__links-socials {
+    display: flex;
+    flex-direction: column;
 
-        @include u.breakpoint-down(small) {
-            align-items: flex-start;
-        }
-        @include u.breakpoint-down(xsmall) {
-            align-items: center;
-        }
+    li:first-of-type {
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+  }
+  &__link {
+    color: var(--black);
+    cursor: pointer;
 
-        span {
-            @include u.breakpoint-down(xsmall) {
-                text-align: center;
-            }
-        }
+    &:hover {
+        color: var(--orange);
     }
-    &__logo {
-        // color: var(--black);
-        font-family: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
-        font-size: u.rem(80);
-        font-weight: bold;
-        color: var(--black);
-        
-        span {
-            color: var(--green)
-        }
-    }
-    &__links {
-        display: flex;
-        // align-items: center;
-        gap: 28px;
-    }
-    &__link {
-        path {
-            fill: var(--black);
-        }
-        &:hover {
-            path {
-                fill: var(--orange);
-            }
-        }
-    }
-    &__icon {
-        width: 24px;
-        height: 24px;
-        path {
-            transition: fill 200ms ease-in-out;
-        }
-    }
-    &__nav-div {
-        display: flex;
-        gap: 100px;
-
-
-        @include u.breakpoint-down(midlarge) {
-            width: 100%;
-            justify-content: end;
-            margin-left: 2rem;
-            gap: 60px
-        }
-        @include u.breakpoint-down(medium) {
-            gap: 40px;
-        }
-        @include u.breakpoint-down(small) {
-            width: 100%;
-            justify-content: left;
-            gap: 40px;
-            order: -1;
-            margin-left: 0;
-        }
-        @include u.breakpoint-down(xsmall) {
-            gap: 16px;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__navigation {
-        display: flex;
-        flex-direction: column;
-        color: var(--black);
-        strong {
-            margin-bottom: 0.75rem;
-            font-size: 1.5rem;
-        }
-        @include u.breakpoint-down(xsmall) {
-            align-items: center;
-            text-align: center;
-        }
-    }
-    &__navigation-link {
-        color: var(--black);
-        transition: color 200ms linear;
-        min-width: max-content;
-
-        &:hover {
-            color: var(--orange);
-        }
-    }
+  }
 }

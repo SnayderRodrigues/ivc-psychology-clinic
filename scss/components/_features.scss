@@ -47,8 +47,8 @@
     &__title {
         margin-bottom: 2rem;
     }
-    &__text {
-        margin-bottom: 2rem;
+    &__text:first-of-type {
+        margin-bottom: 1rem;
     }
     &__card-wrapper {
         display: grid;
@@ -76,6 +76,16 @@
         }
     }
     &__item-headline {
+        display: flex;
+        align-items: center;
         margin-bottom: 2rem;
+    }
+    &__item-icon {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: var(--orange);
+        border-radius: 50%;
+        margin-right: 0.5rem;
     }
 }
