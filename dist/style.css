@@ -208,7 +208,8 @@ h3 {
   gap: 2rem;
 }
 .header__logo {
-  width: 180px;
+  width: 109.58px;
+  height: 50px;
 }
 .header__navbar {
   flex-grow: 1;
@@ -285,7 +286,7 @@ h3 {
   }
 }
 .header__link {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
   transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
   padding-left: 12px;
@@ -1073,7 +1074,7 @@ h3 {
   margin-bottom: 6rem;
 }
 .footer__logo {
-  max-width: 300px;
+  max-width: 360px;
   margin-bottom: 2rem;
 }
 .footer__address, .footer__contact {

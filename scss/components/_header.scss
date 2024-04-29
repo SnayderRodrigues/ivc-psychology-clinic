@@ -27,7 +27,8 @@
     gap: 2rem;
   }
   &__logo {
-    width: 180px;
+    width: 109.58px;
+    height: 50px;
   }
   &__navbar {
     flex-grow: 1;
@@ -95,7 +96,7 @@
     }
   }
   &__link {
-    font-weight: 400;
+    font-weight: 500;
     color: var(--black);
     transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
     padding-left: 12px;
