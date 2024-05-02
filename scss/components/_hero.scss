@@ -7,7 +7,7 @@
   width: 100%;
   height: 100svh;
   color: var(--white);
-  padding: 120px 0;
+  padding-bottom: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   position: relative;
   overflow: hidden;
 
@@ -19,7 +19,6 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 4rem;
 
     @include u.breakpoint-down(midlarge) {
       flex-direction: column;
@@ -37,7 +36,7 @@
     }
 
     & > span {
-      margin-bottom: 2rem;
+      margin-bottom: clamp(1rem, -1.8399999999999999rem + 8vh, 2rem);
 
       @include u.breakpoint-down(xsmall) {
         margin-bottom: 1rem;
@@ -45,7 +44,7 @@
     }
   }
   &__headline {
-    margin-bottom: u.rem(40);
+    margin-bottom: clamp(1.5rem, -1.3399999999999999rem + 8vh, 2.5rem);
     text-align: left;
 
     @include u.breakpoint-down(xsmall) {
@@ -169,7 +168,7 @@
   // background-size: cover;
   // background-position: center;
   object-fit: cover;
-  object-position: center;
+  object-position: center 20%;
   filter: brightness(70%);
   z-index: -1;
   
