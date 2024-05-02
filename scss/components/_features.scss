@@ -2,7 +2,7 @@
 
 .features {
   background-color: var(--white);
-  padding: 120px 0;
+  padding: var(--padding) 0;
 
   @include u.breakpoint-down(small) {
     padding: 80px 0;
@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     gap: clamp(2.5rem, -4.202852614896989rem + 13.946117274167987vw, 8rem);
-    margin-bottom: 8rem;
+    padding-bottom: var(--padding);
 
     @include u.breakpoint-down(medium) {
       flex-direction: column;
       gap: 4rem;
-      margin-bottom: 4rem;
+      padding-bottom: 4rem;
     }
   }
   &__image-wrapper {

@@ -116,8 +116,10 @@ textarea:focus-visible {
   --black: #2b2b2b;
   --purple: #c699fa;
   --blue: #123d68;
-  --orange: #ff583e;
+  --orange: #ff573d
   --bg: #f1edfc;
+  --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
+  --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
 }
 
 /* inter-regular - latin */
@@ -195,7 +197,7 @@ h3 {
   z-index: 1000;
   width: 100%;
   background-color: var(--white);
-  padding-block: 12px 12px;
+  padding-block: var(--padding-header);
   border-bottom: 2px solid var(--gray);
   transition: all 200ms linear;
 }
@@ -381,7 +383,7 @@ h3 {
   width: 100%;
   height: 100svh;
   color: var(--white);
-  padding-bottom: clamp(4rem, -5.94rem + 28vh, 7.5rem);
+  padding-bottom: var(--padding);
   position: relative;
   overflow: hidden;
 }
@@ -475,64 +477,6 @@ h3 {
   transition: all 200ms linear;
 }
 
-.back-to-top-wrapper {
-  position: fixed;
-  z-index: 999999;
-  display: inline-flex;
-  opacity: 1;
-  inset: 50% 0 auto auto;
-  transform: translateY(-50%);
-  top: 92%;
-  right: 0;
-  height: 0;
-}
-@media (max-width: 48.06125em) {
-  .back-to-top-wrapper {
-    display: none;
-  }
-}
-
-.back-to-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 200ms linear;
-}
-.back-to-top.opaque {
-  opacity: 1;
-  pointer-events: all;
-}
-.back-to-top__button {
-  background-color: var(--blue);
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-.back-to-top__button:hover {
-  color: var(--white);
-  background-color: var(--orange);
-}
-.back-to-top__scroll-up-icon {
-  width: 8px;
-  height: 8px;
-  background-color: transparent;
-  border-top: 2px solid var(--white);
-  border-left: 2px solid var(--white);
-  margin-left: 12px;
-  margin-top: 6px;
-  transform: rotate(45deg);
-  transition: all 200ms linear;
-}
-
 .hero-image {
   position: absolute;
   top: 0;
@@ -555,9 +499,9 @@ h3 {
 }
 
 .about {
-  padding: 120px 0;
-  background-color: var(--white);
   color: var(--black);
+  background-color: var(--white);
+  padding: var(--padding) 0;
   position: relative;
 }
 @media (max-width: 48.06125em) {
@@ -626,7 +570,7 @@ h3 {
 .services {
   background-color: var(--white);
   width: 100%;
-  padding: 120px 0;
+  padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {
   .services {
@@ -697,7 +641,7 @@ h3 {
 
 .features {
   background-color: var(--white);
-  padding: 120px 0;
+  padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {
   .features {
@@ -708,13 +652,13 @@ h3 {
   display: flex;
   align-items: center;
   gap: clamp(2.5rem, -4.2028526149rem + 13.9461172742vw, 8rem);
-  margin-bottom: 8rem;
+  padding-bottom: var(--padding);
 }
 @media (max-width: 56.24875em) {
   .features__wrapper {
     flex-direction: column;
     gap: 4rem;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
   }
 }
 .features__image-wrapper {
@@ -822,7 +766,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 8rem;
-  padding: 120px 0;
+  padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {
   .cta__wrapper {
@@ -870,8 +814,8 @@ h3 {
 }
 
 .faq {
-  padding: 120px 0;
   background-color: var(--white);
+  padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {
   .faq {
@@ -1022,7 +966,7 @@ h3 {
 
 .contact {
   background-color: var(--blue);
-  padding: 120px 0;
+  padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {
   .contact {
@@ -1162,7 +1106,7 @@ h3 {
 .footer {
   background-color: var(--white);
   border-top: 2px solid var(--gray);
-  padding: 120px 0 80px;
+  padding: var(--padding) 0 40px;
 }
 @media (max-width: 31.18625em) {
   .footer {
@@ -1184,7 +1128,7 @@ h3 {
   flex-direction: column;
   flex-grow: 1;
   margin-right: 4rem;
-  margin-bottom: 6rem;
+  margin-bottom: var(--padding);
 }
 @media (max-width: 48.06125em) {
   .footer__logo-wrapper {

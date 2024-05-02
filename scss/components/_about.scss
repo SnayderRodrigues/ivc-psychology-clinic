@@ -1,9 +1,9 @@
 @use "../util/" as u;
 
 .about {
-  padding: 120px 0;
-  background-color: var(--white);
   color: var(--black);
+  background-color: var(--white);
+  padding: var(--padding) 0;
   position: relative;
 
   @include u.breakpoint-down(small) {

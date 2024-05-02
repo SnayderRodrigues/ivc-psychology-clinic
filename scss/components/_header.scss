@@ -6,7 +6,7 @@
   z-index: 1000;
   width: 100%;
   background-color: var(--white);
-  padding-block: 12px 12px;
+  padding-block: var(--padding-header);
   border-bottom: 2px solid var(--gray);
   transition: all 200ms linear;
 

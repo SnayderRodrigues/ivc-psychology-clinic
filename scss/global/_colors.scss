@@ -1,4 +1,5 @@
 :root {
+    //colors
     --yellow: #f7f5e8;
     --green: #88c4a6;
     --white: #ffffff;
@@ -6,6 +7,10 @@
     --black: #2b2b2b;
     --purple: #c699fa;
     --blue: #123d68;
-    --orange: #ff583e;
+    --orange: #ff573d
     --bg: #f1edfc;
+
+    //variables
+    --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
+    --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
 }

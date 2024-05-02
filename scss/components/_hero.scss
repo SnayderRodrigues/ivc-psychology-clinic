@@ -7,7 +7,7 @@
   width: 100%;
   height: 100svh;
   color: var(--white);
-  padding-bottom: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
+  padding-bottom: var(--padding);
   position: relative;
   overflow: hidden;
 
@@ -92,66 +92,6 @@
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
     margin-bottom: 4px;
-    transform: rotate(45deg);
-    transition: all 200ms linear;
-  }
-}
-
-.back-to-top-wrapper {
-  position: fixed;
-  z-index: 999999;
-  display: inline-flex;
-  opacity: 1;
-  inset: 50% 0 auto auto;
-  transform: translateY(-50%);
-  top: 92%;
-  right: 0;
-  height: 0;
-
-  @include u.breakpoint-down(small) {
-    display: none;
-  }
-}
-
-.back-to-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 200ms linear;
-
-  &.opaque {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  &__button {
-    background-color: var(--blue);
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-
-    &:hover {
-      color: var(--white);
-      background-color: var(--orange);
-    }
-  }
-  &__scroll-up-icon {
-    width: 8px;
-    height: 8px;
-    background-color: transparent;
-    border-top: 2px solid var(--white);
-    border-left: 2px solid var(--white);
-    margin-left: 12px;
-    margin-top: 6px;
     transform: rotate(45deg);
     transition: all 200ms linear;
   }
