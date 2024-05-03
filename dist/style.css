@@ -116,7 +116,7 @@ textarea:focus-visible {
   --black: #2b2b2b;
   --purple: #c699fa;
   --blue: #123d68;
-  --orange: #ff573d
+  --orange: #ff583e;
   --bg: #f1edfc;
   --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
@@ -156,7 +156,7 @@ h1 span, h2 span, h3 span {
 
 h1 {
   font-size: 2rem;
-  font-size: clamp(2rem, 1.4074074074rem + 2.962962963vw, 4rem);
+  font-size: clamp(2rem, 1.4074074074rem + 2.962962963vw, 3.5rem);
 }
 
 h2 {
@@ -182,7 +182,7 @@ h3 {
 }
 @media (min-width: 56.25em) {
   .button {
-    padding: 20px 30px;
+    padding: clamp(1.125rem, 0.4795454545rem + 1.8181818182vh, 1.25rem) 1.5rem;
   }
 }
 .button:hover {
