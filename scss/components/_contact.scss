@@ -42,7 +42,6 @@
     }
   }
   &__description-title {
-    margin-bottom: 4rem;
 
     @include u.breakpoint-down(xsmall) {
       margin-bottom: 2.5rem;
@@ -57,9 +56,9 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  &__text {
-    margin-bottom: 2rem;
-  }
+  // &__text {
+  //   margin-bottom: 2rem;
+  // }
   &__form {
     display: flex;
     flex-direction: column;
@@ -90,7 +89,7 @@
   }
   &__form-title {
     font-size: u.rem(42);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
     @include u.breakpoint-down(xsmall) {
       margin-bottom: 2.5rem;

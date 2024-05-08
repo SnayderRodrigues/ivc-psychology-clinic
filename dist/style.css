@@ -1011,9 +1011,6 @@ h3 {
     justify-content: start;
   }
 }
-.contact__description-title {
-  margin-bottom: 4rem;
-}
 @media (max-width: 31.18625em) {
   .contact__description-title {
     margin-bottom: 2.5rem;
@@ -1028,9 +1025,6 @@ h3 {
   .contact__description-div {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.contact__text {
-  margin-bottom: 2rem;
 }
 .contact__form {
   display: flex;
@@ -1066,7 +1060,7 @@ h3 {
 }
 .contact__form-title {
   font-size: 2.625rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 31.18625em) {
   .contact__form-title {
