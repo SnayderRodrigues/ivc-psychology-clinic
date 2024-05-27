@@ -1091,7 +1091,7 @@ h3 {
 }
 .footer__wrapper {
   display: flex;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--gray);
   margin-bottom: 2rem;
 }
 @media (max-width: 48.06125em) {
@@ -1111,9 +1111,13 @@ h3 {
     margin-bottom: 2rem;
   }
 }
+.footer__logo-wrapper > a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
 .footer__logo {
   max-width: 360px;
-  margin-bottom: 2rem;
 }
 .footer__address, .footer__contact {
   display: flex;
@@ -1122,6 +1126,9 @@ h3 {
 }
 .footer__address span:first-of-type, .footer__contact span:first-of-type {
   font-weight: 600;
+}
+.footer__address a, .footer__contact a {
+  color: var(--black);
 }
 .footer__contact span:not(:first-child) {
   text-decoration: underline;
