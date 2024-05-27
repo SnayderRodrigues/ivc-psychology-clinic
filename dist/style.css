@@ -1082,7 +1082,7 @@ h3 {
 .footer {
   background-color: var(--white);
   border-top: 2px solid var(--gray);
-  padding: var(--padding) 0 40px;
+  padding: 100px 0 40px;
 }
 @media (max-width: 31.18625em) {
   .footer {
@@ -1104,7 +1104,7 @@ h3 {
   flex-direction: column;
   flex-grow: 1;
   margin-right: 4rem;
-  margin-bottom: var(--padding);
+  margin-bottom: 4rem;
 }
 @media (max-width: 48.06125em) {
   .footer__logo-wrapper {

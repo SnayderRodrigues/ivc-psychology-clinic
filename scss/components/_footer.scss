@@ -3,7 +3,7 @@
 .footer {
   background-color: var(--white);
   border-top: 2px solid var(--gray);
-  padding: var(--padding) 0 40px;
+  padding: 100px 0 40px;
 
   @include u.breakpoint-down(xsmall) {
     padding: 80px 0 40px;
@@ -23,7 +23,7 @@
     flex-direction: column;
     flex-grow: 1;
     margin-right: 4rem;
-    margin-bottom: var(--padding);
+    margin-bottom: 4rem;
 
     @include u.breakpoint-down(small) {
       margin-bottom: 2rem;
