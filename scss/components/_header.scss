@@ -21,8 +21,7 @@
     gap: 2rem;
   }
   &__logo {
-    width: 109.58px;
-    height: 50px;
+    width: 200px;
   }
   &__navbar {
     flex-grow: 1;
@@ -107,12 +106,12 @@
   }
   &__button {
     color: var(--white);
-    background-color: var(--purple);
+    background-color: var(--orange);
     padding: 16px 24px;
 
     &:hover {
       color: var(--white);
-      background-color: var(--orange);
+      background-color: var(--purple);
     }
 
     @include u.breakpoint-down(xsmall) {
