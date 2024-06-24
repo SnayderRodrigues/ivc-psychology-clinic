@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .contact {
-  background-color: var(--blue);
+  background-color: var(--purple);
   padding: var(--padding) 0;
 
   @include u.breakpoint-down(small) {

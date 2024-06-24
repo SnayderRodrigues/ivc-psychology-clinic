@@ -109,14 +109,14 @@ textarea:focus-visible {
 }
 
 :root {
+  --background: #fafafa;
   --yellow: #f7f5e8;
   --green: #88c4a6;
   --white: #ffffff;
   --gray: #c0c0c0;
   --black: #2b2b2b;
-  --purple: #c699fa;
-  --blue: #123d68;
-  --orange: #ff583e;
+  --purple: #7b6af4;
+  --orange: #ff6016;
   --bg: #f1edfc;
   --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
@@ -154,7 +154,7 @@ h3 {
   color: var(--white);
   font-weight: 400;
   line-height: 1;
-  background-color: var(--blue);
+  background-color: var(--purple);
   border-radius: 999px;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
@@ -232,7 +232,7 @@ h3 {
     margin-right: 0.5rem;
     width: 240px;
     height: 400px;
-    background-color: var(--blue);
+    background-color: var(--purple);
     overflow: hidden;
     opacity: 0;
     scale: 0.3;
@@ -289,7 +289,7 @@ h3 {
 }
 .header__button {
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--purple);
   padding: 16px 24px;
 }
 .header__button:hover {
@@ -708,13 +708,13 @@ h3 {
   display: flex;
   flex-direction: column;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--purple);
   padding: 2rem;
   border-radius: 1.125rem;
   transition: background-color 200ms linear;
 }
 .features__item:hover {
-  background-color: hsl(210, 70%, 34%);
+  background-color: hsl(247, 66%, 59%);
 }
 .features__item-headline {
   display: flex;
@@ -733,7 +733,7 @@ h3 {
 
 .cta {
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--purple);
   position: relative;
   overflow: hidden;
 }
@@ -947,7 +947,7 @@ h3 {
 }
 
 .contact {
-  background-color: var(--blue);
+  background-color: var(--purple);
   padding: var(--padding) 0;
 }
 @media (max-width: 48.06125em) {

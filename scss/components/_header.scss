@@ -56,7 +56,7 @@
       margin-right: 0.5rem;
       width: 240px;
       height: 400px;
-      background-color: var(--blue);
+      background-color: var(--purple);
       overflow: hidden;
       opacity: 0;
       scale: 0.3;
@@ -107,7 +107,7 @@
   }
   &__button {
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--purple);
     padding: 16px 24px;
 
     &:hover {
