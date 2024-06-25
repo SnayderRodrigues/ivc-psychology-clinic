@@ -44,6 +44,7 @@
     height: auto;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 
     @include u.breakpoint-down(medium) {
       width: 100%;
@@ -52,16 +53,24 @@
       order: -1;
     }
   }
-  &__image {
+  &__image:nth-of-type(1) {
     width: 70%;
     height: 100%;
     max-height: 500px;
     object-fit: cover;
     border-radius: var(--b-radius);
+    position: relative;
+    z-index: 1;
 
     @include u.breakpoint-down(medium) {
       width: 100%;
       max-height: 500px;
     }
+  }
+  &__image:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
   }
 }

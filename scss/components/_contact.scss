@@ -13,6 +13,7 @@
   &__wrapper {
     display: flex;
     gap: 3rem;
+    
 
     @include u.breakpoint-down(midlarge) {
       flex-direction: column;
@@ -28,6 +29,7 @@
     padding: 60px;
     border-radius: var(--b-radius);
     transition: box-shadow 200ms ease-in-out, transform 300ms ease-in-out;
+    position: relative;
 
     @include u.breakpoint-down(small) {
       width: 100%;
@@ -71,6 +73,7 @@
     padding: 60px;
     border-radius: 1.25rem;
     transition: box-shadow 200ms ease-in-out, transform 300ms ease-in-out;
+    position: relative;
 
     @include u.breakpoint-down(midlarge) {
       width: 100%;
