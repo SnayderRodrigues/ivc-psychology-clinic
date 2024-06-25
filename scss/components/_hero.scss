@@ -27,7 +27,7 @@
     text-align: center;
     position: relative;
     max-width: 850px;
-    margin-top: 6rem;
+    margin-top: clamp(6rem, -17.076923076923077rem + 73.84615384615385vh, 12rem);
     margin-bottom: 6rem;
 
     @include u.breakpoint-down(midlarge) {

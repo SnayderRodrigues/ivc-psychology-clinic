@@ -193,7 +193,7 @@ h3 {
   gap: 2rem;
 }
 .header__logo {
-  width: 200px;
+  width: 220px;
 }
 .header__navbar {
   display: flex;
@@ -377,7 +377,7 @@ h3 {
   text-align: center;
   position: relative;
   max-width: 850px;
-  margin-top: 6rem;
+  margin-top: clamp(6rem, -17.0769230769rem + 73.8461538462vh, 12rem);
   margin-bottom: 6rem;
 }
 @media (max-width: 69.99875em) {
@@ -1030,7 +1030,7 @@ h3 {
   width: 40%;
   background-color: var(--white);
   padding: 60px;
-  border-radius: 1.25rem;
+  border-radius: var(--b-radius);
   transition: box-shadow 200ms ease-in-out, transform 300ms ease-in-out;
   position: relative;
 }
@@ -1103,7 +1103,7 @@ h3 {
 
 .footer {
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--light-purple);
   padding: 100px 0 40px;
   border-top-left-radius: var(--b-radius-lg);
   border-top-right-radius: var(--b-radius-lg);
