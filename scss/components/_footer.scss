@@ -1,8 +1,6 @@
 @use "../util/" as u;
 
 .footer {
-  background-color: var(--white);
-  border-top: 2px solid var(--gray);
   padding: 100px 0 40px;
 
   @include u.breakpoint-down(xsmall) {

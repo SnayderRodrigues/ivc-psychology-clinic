@@ -5,9 +5,8 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--background);
   padding-block: var(--padding-header);
-  border-bottom: 2px solid var(--gray);
   transition: all 200ms linear;
 
   &.opaque {
@@ -105,14 +104,7 @@
     }
   }
   &__button {
-    color: var(--white);
-    background-color: var(--orange);
     padding: 16px 24px;
-
-    &:hover {
-      color: var(--white);
-      background-color: var(--purple);
-    }
 
     @include u.breakpoint-down(xsmall) {
       display: none;

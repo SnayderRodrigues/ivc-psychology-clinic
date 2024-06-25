@@ -112,6 +112,13 @@
     text-align: center;
     // padding: 24px 30px 24px;
   }
+  &__description &__button-wrapper &__button {
+    background-color: var(--purple);
+
+    &:hover {
+      background-color: var(--dark-purple);
+    }
+  }
 
   .form-control {
     margin-bottom: 2rem;

@@ -1,7 +1,6 @@
 @use "../util/" as u;
 
 .features {
-  background-color: var(--white);
   padding: var(--padding) 0;
 
   @include u.breakpoint-down(small) {
@@ -82,7 +81,7 @@
     transition: background-color 200ms linear;
 
     &:hover {
-      background-color: hsl(247, 66%, 59%);
+      background-color: var(--dark-purple);
     }
   }
   &__item-headline {

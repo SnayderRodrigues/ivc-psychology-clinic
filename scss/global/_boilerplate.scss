@@ -14,10 +14,11 @@ body {
     u.rem(16),
     0.9353448275862069rem + 0.27586206896551724vw,
     u.rem(18)
-  );
-  line-height: 1.78;
+    );
+    line-height: 1.78;
+    color: var(--black);
+    background-color: var(--background);
   overflow-x: hidden;
-  color: var(--black);
 }
 
 body.open-menu {

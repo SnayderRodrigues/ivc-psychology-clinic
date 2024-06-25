@@ -35,11 +35,6 @@
   }
   &__button {
     width: fit-content;
-
-    &:hover {
-      color: var(--black);
-      background-color: var(--white);
-    }
   }
   &__image {
     position: absolute;
