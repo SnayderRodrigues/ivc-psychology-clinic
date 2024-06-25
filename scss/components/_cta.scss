@@ -2,7 +2,7 @@
 
 .cta {
   color: var(--white);
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   position: relative;
   overflow: hidden;
 
@@ -35,6 +35,10 @@
   }
   &__button {
     width: fit-content;
+
+    &:hover {
+      background-color: var(--purple);
+    }
   }
   &__image {
     position: absolute;

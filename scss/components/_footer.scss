@@ -1,15 +1,20 @@
 @use "../util/" as u;
 
 .footer {
+  color: var(--white);
+  background-color: var(--orange);
   padding: 100px 0 40px;
-
+  border-top-left-radius: var(--b-radius-lg);
+  border-top-right-radius: var(--b-radius-lg);
+  margin-top: -2rem;
+  
   @include u.breakpoint-down(xsmall) {
     padding: 80px 0 40px;
   }
 
   &__wrapper {
     display: flex;
-    border-bottom: 2px solid var(--gray);
+    border-bottom: 2px solid var(--white);
     margin-bottom: 2rem;
 
     @include u.breakpoint-down(small) {
@@ -46,7 +51,7 @@
     }
     
     a {
-      color: var(--black);
+      color: var(--white);
     }
   }
   &__contact span:not(:first-child) {
@@ -82,11 +87,11 @@
     }
   }
   &__link {
-    color: var(--black);
+    color: var(--white);
     cursor: pointer;
 
     &:hover {
-      color: var(--orange);
+      color: var(--dark-purple);
     }
   }
 }
