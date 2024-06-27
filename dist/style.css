@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -314,7 +318,7 @@ h3 {
   height: 3px;
   background-color: var(--black);
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 200ms ease-in-out;
@@ -324,22 +328,36 @@ h3 {
   height: 3px;
   background-color: var(--black);
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 200ms ease-in-out;
+}
+.header__menu-button-3 {
+  width: 100%;
+  height: 3px;
+  background-color: var(--black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 200ms linear;
 }
 .header__menu.open-menu > .header__menu-button-1 {
   background-color: var(--white);
   transform: rotate(-45deg) translate(-50%, -50%);
   top: 10%;
-  left: 42%;
+  left: 41%;
 }
 .header__menu.open-menu > .header__menu-button-2 {
   background-color: var(--white);
   transform: rotate(45deg) translate(-50%, -50%);
   top: 82%;
-  left: 35%;
+  left: 34%;
+}
+.header__menu.open-menu > .header__menu-button-3 {
+  background-color: var(--purple);
+  opacity: 0;
 }
 .header .link-hidden {
   display: none;
