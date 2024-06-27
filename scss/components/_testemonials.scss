@@ -1,0 +1,50 @@
+@use "../util/" as u;
+
+.testemonials {
+  color: var(--white);
+  background-color: var(--dark-purple);
+  padding: var(--padding);
+
+  @include u.breakpoint-down(small) {
+    padding: 80px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1b2a;
+    padding: 2.5rem;
+    border-radius: var(--b-radius);
+    overflow: hidden;
+    position: relative;
+  }
+  &__card-design-element {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 140px);
+    transform: translate(0%, -50%);
+    z-index: 1;
+  }
+  &__card-text {
+    width: 60%;
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+  }
+  &__card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+  }
+}
