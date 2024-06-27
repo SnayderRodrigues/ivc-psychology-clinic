@@ -124,4 +124,10 @@
       grid-area: 1 / 8 / 2 / 13;
     }
   }
+  &__design-element {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    z-index: -1;
+  }
 }
