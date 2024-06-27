@@ -2,9 +2,7 @@
 
 .contact {
   background-color: var(--dark-purple);
-  padding: var(--padding) 0 calc(120px + 2rem) 0;
-  border-top-left-radius: var(--b-radius-lg);
-  border-top-right-radius: var(--b-radius-lg);
+  padding: var(--padding);
 
   @include u.breakpoint-down(small) {
     padding: 80px 0;
