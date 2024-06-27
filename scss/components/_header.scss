@@ -31,7 +31,7 @@
       gap: 0;
     }
     @include u.breakpoint-down(small) {
-      flex-grow: 0;
+      order: 2;
       gap: 24px;
     }
   }
@@ -105,7 +105,7 @@
   &__button {
     padding: 16px 24px;
 
-    @include u.breakpoint-down(xsmall) {
+    @include u.breakpoint-down(small) {
       display: none;
     }
   }
@@ -161,7 +161,7 @@
   .link-hidden {
     display: none;
 
-    @include u.breakpoint-down(xsmall) {
+    @include u.breakpoint-down(small) {
       display: block;
     }
   }

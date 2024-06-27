@@ -207,7 +207,7 @@ h3 {
 }
 @media (max-width: 48.06125em) {
   .header__navbar {
-    flex-grow: 0;
+    order: 2;
     gap: 24px;
   }
 }
@@ -288,7 +288,7 @@ h3 {
 .header__button {
   padding: 16px 24px;
 }
-@media (max-width: 31.18625em) {
+@media (max-width: 48.06125em) {
   .header__button {
     display: none;
   }
@@ -344,7 +344,7 @@ h3 {
 .header .link-hidden {
   display: none;
 }
-@media (max-width: 31.18625em) {
+@media (max-width: 48.06125em) {
   .header .link-hidden {
     display: block;
   }
