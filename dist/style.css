@@ -912,13 +912,13 @@ h3 {
 .faq__question-div {
   width: 100%;
   background-color: var(--soft-purple);
-  padding: 18px;
+  padding: 1.5rem 2.5rem;
   border-bottom: 2px solid var(--background);
   transition: padding 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 300ms linear, box-shadow 200ms ease-in-out;
 }
 @media (max-width: 48.06125em) {
   .faq__question-div {
-    padding: 16px 0;
+    padding: 1rem 2rem;
   }
 }
 .faq__question-div:nth-child(1) {
