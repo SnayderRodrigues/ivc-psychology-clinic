@@ -16,7 +16,11 @@
   //variables
   --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
-  --b-radius: 1.75rem;
+  --b-radius: clamp(
+    0.875rem,
+    0.6157407407407407rem + 1.2962962962962965vw,
+    1.75rem
+  );
   --b-radius-lg: 2.5rem;
   --b-radius-sm: 1.375rem;
 }
