@@ -89,6 +89,7 @@
   &__button {
     color: var(--white);
     background-color: var(--purple);
+    border: 4px solid var(--light-purple);
 
     &:hover {
       color: var(--white);

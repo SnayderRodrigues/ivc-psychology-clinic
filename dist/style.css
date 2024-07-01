@@ -125,6 +125,7 @@ textarea:focus-visible {
   --light-purple: #a296fd;
   --dark-purple: #2e2849;
   --orange: #ff6016;
+  --light-orange: hsl(19, 100%, 64%);
   --bg: #f1edfc;
   --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
@@ -166,6 +167,7 @@ h3 {
   line-height: 1;
   background-color: var(--orange);
   border-radius: 999px;
+  border: 4px solid var(--light-orange);
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
   position: relative;
@@ -466,6 +468,7 @@ h3 {
 .hero__button {
   color: var(--white);
   background-color: var(--purple);
+  border: 4px solid var(--light-purple);
 }
 .hero__button:hover {
   color: var(--white);
@@ -800,11 +803,17 @@ h3 {
   color: var(--white);
   background-color: var(--purple);
   padding: 2rem;
+  border: 4px solid var(--light-purple);
   border-radius: var(--b-radius);
   transition: background-color 200ms linear;
 }
 .features__item:hover {
   background-color: var(--dark-purple);
+}
+@media (max-width: 48.06125em) {
+  .features__item:hover {
+    background-color: var(--purple);
+  }
 }
 .features__item-headline {
   display: flex;
@@ -867,9 +876,6 @@ h3 {
 .cta__button {
   width: -moz-fit-content;
   width: fit-content;
-}
-.cta__button:hover {
-  background-color: var(--purple);
 }
 .cta__image {
   position: absolute;
@@ -1368,6 +1374,7 @@ h3 {
 }
 .contact__description .contact__button-wrapper .contact__button {
   background-color: var(--purple);
+  border: 4px solid var(--light-purple);
 }
 .contact__description .contact__button-wrapper .contact__button:hover {
   background-color: var(--dark-purple);
