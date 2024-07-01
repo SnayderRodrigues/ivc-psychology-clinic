@@ -5,9 +5,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  // min-height: 100svh;
   padding-bottom: 1rem;
-  margin-bottom: -1px;
   position: relative;
   overflow: hidden;
 
@@ -163,7 +161,7 @@
   &__design-element {
     width: 100%;
     position: absolute;
-    bottom: 0%;
+    bottom: calc(0% - 1px);
     z-index: -1;
   }
 }
