@@ -199,9 +199,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 .header__logo {
+  flex-shrink: 0;
   width: 200px;
 }
 .header__navbar {
@@ -240,6 +241,7 @@ h3 {
     width: 240px;
     height: 400px;
     background-color: var(--purple);
+    border: 4px solid var(--light-purple);
     overflow: hidden;
     opacity: 0;
     scale: 0.3;
@@ -263,11 +265,13 @@ h3 {
 .header__list {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
+  margin-left: -88.2px;
 }
 @media (max-width: 56.24875em) {
   .header__list {
-    gap: 12px;
+    gap: 1.5rem;
+    margin-left: 0;
   }
 }
 @media (max-width: 48.06125em) {
@@ -281,7 +285,6 @@ h3 {
   font-weight: 500;
   color: var(--black);
   transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
-  padding-left: 12px;
 }
 @media (min-width: 48.0625em) {
   .header__link:hover {
@@ -291,7 +294,6 @@ h3 {
 @media (max-width: 48.06125em) {
   .header__link {
     color: var(--white);
-    padding-left: 0;
   }
 }
 .header__button {
@@ -508,6 +510,12 @@ h3 {
      object-fit: cover;
   border-radius: 1.125rem;
   border-radius: var(--b-radius);
+}
+@media (max-width: 48.06125em) {
+  .hero__image-wrapper img {
+    width: 100%;
+    max-height: 300px;
+  }
 }
 .hero__image-wrapper img:nth-of-type(1) {
   grid-area: 1/1/2/4;
