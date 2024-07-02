@@ -3,44 +3,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/svgs/Flower-1.svg"
+    />
     <title>Contato IVC</title>
   </head>
-  <header class="header">
-    <div class="wrapper header__wrapper">
-      <a href="./index.html" class="header__logo">
-        <img src="/assets/images/logo.webp" alt="logo" />
-      </a>
-      <nav class="header__navbar">
-        <div class="header__list-div" id="list-div">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="#about" class="header__link">Sobre</a>
-            </li>
-            <li class="header__item">
-              <a href="#services" class="header__link">Serviços</a>
-            </li>
-            <li class="header__item">
-              <a href="#features" class="header__link">Benefícios</a>
-            </li>
-            <li class="header__item">
-              <a href="#faq" class="header__link">FAQ</a>
-            </li>
-            <li class="header__item">
-              <a href="#contact" class="header__link link-hidden">Contato</a>
-            </li>
-          </ul>
-        </div>
-        <button class="header__menu">
-          <div class="header__menu-button-1"></div>
-          <div class="header__menu-button-2"></div>
-          <div class="header__menu-button-3"></div>
-        </button>
-      </nav>
-      <a href="./contact.html" class="button header__button">Contato</a>
-    </div>
-  </header>
   <body>
-    <section class="contact" id="contact">
+    <div id="contactPreloader">
+      <img src="./assets/svgs/Flower-1.svg" alt="" class="contactPreloader__image">
+    </div>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="./index.html" class="header__logo">
+          <img src="/assets/images/logo.webp" alt="logo" />
+        </a>
+        <nav class="header__navbar">
+          <div class="header__list-div" id="list-div">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#about" class="header__link">Sobre</a>
+              </li>
+              <li class="header__item">
+                <a href="#services" class="header__link">Serviços</a>
+              </li>
+              <li class="header__item">
+                <a href="#features" class="header__link">Benefícios</a>
+              </li>
+              <li class="header__item">
+                <a href="#faq" class="header__link">FAQ</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link-hidden">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__menu">
+            <div class="header__menu-button-1"></div>
+            <div class="header__menu-button-2"></div>
+            <div class="header__menu-button-3"></div>
+          </button>
+        </nav>
+        <a href="#" class="button header__button">Contato</a>
+      </div>
+    </header>
+    <main class="contact" id="contact">
       <div class="wrapper contact__wrapper">
         <div class="contact__form">
           <h2 class="contact__form-title">Entre em contato</h2>
@@ -123,51 +132,51 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <!-- <div class="footer__cta-wrapper">
+            <h2 class="footer__cta-headline">
+              Quer saber mais sobre nossos serviços?
+            </h2>
+            <a href="./contact.html" class="button footer__cta-button"
+              >Entre em Contato</a
+            >
+          </div> -->
+          <a href="./index.html"
+            ><img src="./assets/images/logo.webp" alt="" class="footer__logo"
+          /></a>
+          <div class="footer__info-wrapper">
+            <div class="footer__address">
+              <span class="footer__info-title">Endereço</span>
+              <span
+                >Rua Coronel Antônio Botelho, 000, Centro – Maranguape, CE</span
+              >
+              <span class="footer__info-title">Telefone</span>
+              <a href="" class="footer__link">+55 (85) 00000-0000</a>
+              <span class="footer__info-title">Email</span>
+              <a href="" class="footer__link">contato@ivc.com</a>
+            </div>
+            <div class="footer__socials">
+              <span class="footer__info-title">Redes Sociais</span>
+              <a class="footer__link">Facebook</a>
+              <a class="footer__link">Instagram</a>
+              <a class="footer__link">LinkedIn</a>
+              <a class="footer__link">Twitter</a>
+              <a class="footer__link">Whatsapp</a>
+            </div>
+            <div class="footer__navigation">
+              <span class="footer__info-title">Navegação</span>
+              <a href="./index.html" class="footer__link">Início</a>
+              <a href="./index.html#about" class="footer__link">Sobre</a>
+              <a href="./index.html#services" class="footer__link">Serviços</a>
+              <a href="./index.html#features" class="footer__link">Benefícios</a>
+              <a href="./index.html#faq" class="footer__link">FAQ</a>
+              <a href="#" class="footer__link">Contato</a>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
-  <footer class="footer">
-    <div class="wrapper footer__wrapper">
-      <div class="footer__logo-wrapper">
-        <a href="#"
-          ><img src="./assets/images/logo.webp" alt="" class="footer__logo"
-        /></a>
-        <div class="footer__address">
-          <span>Endereço:</span>
-          <span
-            >Rua Coronel Antônio Botelho, 000, Centro. Maranguape, CE -
-            Brasil.</span
-          >
-        </div>
-        <div class="footer__contact">
-          <span>Contato:</span>
-          <a href="">+55 (85) 00000-0000</a>
-          <a href="">contato@ivc.com</a>
-        </div>
-      </div>
-      <div class="footer__links-wrapper">
-        <ul class="footer__links-sitemap">
-          <li>Navegação</li>
-          <li><a href="#" class="footer__link">Início</a></li>
-          <li><a href="#about" class="footer__link">Sobre</a></li>
-          <li><a href="#services" class="footer__link">Serviços</a></li>
-          <li><a href="#features" class="footer__link">Benefícios</a></li>
-          <li><a href="#faq" class="footer__link">FAQ</a></li>
-          <li><a href="./contact.html" class="footer__link">Contato</a></li>
-        </ul>
-        <ul class="footer__links-socials">
-          <li>Redes Sociais</li>
-          <li><a class="footer__link">Facebook</a></li>
-          <li><a class="footer__link">Instagram</a></li>
-          <li><a class="footer__link">LinkedIn</a></li>
-          <li><a class="footer__link">Twitter</a></li>
-          <li><a class="footer__link">Whatsapp</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div>
-        © 2024 Iniciativa Viver e Crescer. Todos os direitos reservados.
-      </div>
-    </div>
-  </footer>
+    <script src="./script/contact-script.js"></script>
 </html>
