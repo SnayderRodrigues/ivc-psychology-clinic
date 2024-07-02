@@ -7,3 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document
+  .getElementById("contactNewsletterForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(
+      "Agradecemos seu interesse! No entanto, este é um projeto de estudos e a inscrição não é funcional."
+    );
+  });

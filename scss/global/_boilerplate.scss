@@ -14,10 +14,11 @@ html {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  font-size: 1rem;
   font-size: clamp(
-    u.rem(16),
-    0.9353448275862069rem + 0.27586206896551724vw,
-    u.rem(18)
+    1rem,
+    0.8807251908396947rem + 0.38167938931297707vw,
+    1.125rem
   );
   line-height: 1.78;
   color: var(--black);
@@ -69,6 +70,7 @@ input {
   padding: 0;
   font-family: inherit;
   color: inherit;
+  font-size: inherit;
 }
 
 textarea {
@@ -89,11 +91,15 @@ select:focus,
 input:focus,
 textarea:focus-visible {
   outline: 0;
-  border-bottom: 1px solid var(--orange) !important;
+  border-bottom: 1px solid var(--orange);
 }
 
 textarea:focus-visible {
   outline: 0;
+}
+
+button {
+  font-size: inherit;
 }
 
 .wrapper {

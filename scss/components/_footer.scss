@@ -24,7 +24,7 @@
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2.5rem;
-    border-bottom: 2px solid var(--purple);
+    border-bottom: 2px solid var(--black);
   }
   &__cta-headline {
     font-size: clamp(
@@ -35,6 +35,20 @@
   }
   &__cta-button {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-size: clamp(
+      1rem,
+      0.5229007633587787rem + 1.5267175572519083vw,
+      1.5rem
+    );
+
+    svg {
+      width: clamp(1rem, 0.5229007633587787rem + 1.5267175572519083vw, 1.5rem);
+      height: clamp(1rem, 0.5229007633587787rem + 1.5267175572519083vw, 1.5rem);
+    }
   }
   &__logo {
     max-width: 260px;
@@ -47,7 +61,9 @@
   }
   &__socials,
   &__address,
-  &__navigation {
+  &__navigation,
+  &__newsletter {
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -61,15 +77,57 @@
       color: var(--black);
     }
   }
-  &__address > span:nth-of-type(2), &__address > a:nth-of-type(1) {
+  &__address,
+  &__newsletter {
+    flex: 2;
+  }
+  &__address > span:nth-of-type(2),
+  &__address > a:nth-of-type(1),
+  &__newsletter > span:nth-of-type(2) {
     margin-bottom: 1rem;
   }
   &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     color: var(--black);
     cursor: pointer;
 
     &:hover {
       color: var(--orange);
+    }
+  }
+  &__newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    input {
+      width: 100%;
+      color: var(--white);
+      font-weight: 400;
+      line-height: 1;
+      background-color: var(--light-orange);
+      padding: 20px 22px;
+      border-radius: 999px;
+      border: 0;
+      overflow: hidden;
+    }
+    input::placeholder {
+      color: var(--white);
+    }
+    input:focus {
+      outline: 0;
+      border: 0;
+      background-color: var(--orange);
+    }
+    button {
+      background-color: var(--light-orange);
+      border: 0;
+      border-radius: 50%;
+      
+      &:hover {
+        background-color: var(--orange);
+      }
     }
   }
 }

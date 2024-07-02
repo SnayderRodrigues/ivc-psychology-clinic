@@ -80,3 +80,12 @@ faqs.forEach((faq) => {
     faq.classList.toggle("active");
   });
 });
+
+document
+  .getElementById("newsletterForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(
+      "Agradecemos seu interesse! No entanto, este é um projeto de estudos e a inscrição não é funcional."
+    );
+  });
