@@ -969,7 +969,7 @@ h3 {
   align-items: center;
 }
 .faq__title {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 48.06125em) {
   .faq__title {
@@ -1007,16 +1007,16 @@ h3 {
   background-color: var(--soft-purple);
   border: 4px solid var(--light-purple);
   border-radius: var(--b-radius);
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 64.06125em) {
   .faq__accordion {
     width: 100%;
   }
 }
-@media (max-width: 31.24875em) {
+@media (max-width: 48.06125em) {
   .faq__accordion {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 }
 .faq__question-div {
@@ -1047,12 +1047,7 @@ h3 {
 }
 @media (max-width: 48.06125em) {
   .faq__question {
-    padding: 1.5rem 2rem;
-  }
-}
-@media (max-width: 31.24875em) {
-  .faq__question {
-    min-height: 64.06px;
+    padding: 1.5rem 1.75rem;
   }
 }
 .faq__scroll-down-icon {
@@ -1064,8 +1059,8 @@ h3 {
   transform: rotate(45deg);
   transition: all 200ms linear;
   flex-shrink: 0;
-  margin-left: 12px;
-  margin-right: 4px;
+  margin-left: 1rem;
+  margin-right: 0.25rem;
 }
 .faq__answer {
   display: grid;
@@ -1104,6 +1099,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-align: center;
 }
 
 .testemonials {
