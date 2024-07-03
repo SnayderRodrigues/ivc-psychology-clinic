@@ -23,10 +23,6 @@
     @include u.breakpoint-down(small) {
       padding: 2rem;
     }
-
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-    }
   }
   &__cta-wrapper {
     display: flex;
@@ -35,6 +31,12 @@
     gap: 1rem;
     padding-bottom: 2.5rem;
     border-bottom: 2px solid var(--white);
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
   }
   &__cta-headline {
     font-size: clamp(
@@ -62,15 +64,26 @@
   }
   &__logo {
     max-width: 260px;
+
+    @media (max-width: 375px) {
+      max-width: 100%;
+    }
   }
   &__info-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
+
+    @include u.breakpoint-down(midlarge) {
+      flex-wrap: wrap;
+    }
+    @include u.breakpoint-down(small) {
+      flex-wrap: wrap;
+    }
   }
-  &__socials,
   &__address,
+  &__socials,
   &__navigation,
   &__newsletter {
     flex: 1;
@@ -86,14 +99,39 @@
       color: var(--white);
     }
   }
-  &__address,
-  &__newsletter {
+  &__address {
     flex: 2;
+    
+    @include u.breakpoint-down(small) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      min-width: 100%;
+    }
+    @include u.breakpoint-down(xsmall) {
+      gap: 2rem;
+    }
+
+    &-group:nth-of-type(1) {
+      width: 100%;
+    }
+    &-group:nth-of-type(2), &-group:nth-of-type(3) {
+      flex: 1;
+    }
   }
-  &__address > span:nth-of-type(2),
-  &__address > a:nth-of-type(1),
-  &__newsletter > span:nth-of-type(2) {
+  &__address-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: 0;
+    }
+  }
+  &__navigation {
+    @include u.breakpoint-down(xsmall) {
+      display: none;
+    }
   }
   &__link {
     display: flex;
@@ -107,12 +145,23 @@
       color: var(--dark-purple);
     }
   }
+  &__newsletter {
+    flex: 2;
+
+    @include u.breakpoint-down(midlarge) {
+      min-width: 100%;
+    }
+  }
+  &__newsletter > span:nth-of-type(2) {
+    margin-bottom: 1rem;
+  }
   &__newsletter-form {
     display: flex;
     align-items: center;
     gap: 0.25rem;
     input {
       width: 100%;
+      max-width: 360px;
       color: var(--white);
       font-weight: 400;
       line-height: 1;
