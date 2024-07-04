@@ -131,7 +131,7 @@ button {
   --light-purple: #a296fd;
   --dark-purple: #2e2849;
   --orange: #ff6016;
-  --light-orange: hsl(19, 100%, 64%);
+  --light-orange: #ff8247;
   --bg: #f1edfc;
   --padding: clamp(4rem, -5.940000000000001rem + 28.000000000000004vh, 7.5rem);
   --padding-header: clamp(0.5rem, -0.20999999999999996rem + 2vh, 0.75rem);
@@ -769,12 +769,12 @@ h3 {
 }
 
 .features {
-  padding: var(--padding) 0;
+  padding: 0 0 var(--padding) 0;
   position: relative;
 }
 @media (max-width: 48.06125em) {
   .features {
-    padding: 80px 0;
+    padding: 0 0 80px 0;
   }
 }
 .features__wrapper {

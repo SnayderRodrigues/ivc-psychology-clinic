@@ -1,11 +1,11 @@
 @use "../util/" as u;
 
 .features {
-  padding: var(--padding) 0;
+  padding: 0 0 var(--padding) 0;
   position: relative;
 
   @include u.breakpoint-down(small) {
-    padding: 80px 0;
+    padding: 0 0 80px 0;
   }
 
   &__wrapper {
