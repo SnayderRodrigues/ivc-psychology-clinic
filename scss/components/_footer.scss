@@ -62,6 +62,9 @@
       height: clamp(1rem, 0.5229007633587787rem + 1.5267175572519083vw, 1.5rem);
     }
   }
+  &__logo-wrapper {
+    width: fit-content;
+  }
   &__logo {
     max-width: 260px;
 
