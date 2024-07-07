@@ -84,6 +84,9 @@
     @include u.breakpoint-down(small) {
       padding: 1.5rem 1.75rem;
     }
+    @include u.breakpoint-down(xsmall) {
+      padding: 1rem 1.75rem;
+    }
   }
   &__scroll-down-icon {
     width: 12px;

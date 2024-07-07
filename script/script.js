@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function scroll() {
     if (window.scrollY >= origOffsetY) {
-      menu.classList.add("opaque");
+      menu.classList.add("scrolled");
     } else {
-      menu.classList.remove("opaque");
+      menu.classList.remove("scrolled");
     }
   }
 

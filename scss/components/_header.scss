@@ -9,9 +9,9 @@
   padding-block: var(--padding-header);
   transition: all 200ms linear;
 
-  &.opaque {
-    padding-block: 12px 12px;
-  }
+  // &.scrolled {
+  //   padding-block: 12px 12px;
+  // }
 
   &__wrapper {
     display: flex;
@@ -22,6 +22,10 @@
   &__logo {
     flex-shrink: 0;
     width: 200px;
+
+    @include u.breakpoint-down(xsmall) {
+      width: 160px;
+    }
   }
   &__navbar {
     display: flex;

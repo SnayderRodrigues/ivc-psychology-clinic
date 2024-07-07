@@ -3,12 +3,12 @@
 .testemonials {
   color: var(--white);
   background-color: var(--dark-purple);
-  padding: var(--padding) 0;
+  padding: var(--padding) 0 0;
   position: relative;
   z-index: 1;
 
   @include u.breakpoint-down(small) {
-    padding: 80px 0;
+    padding: 80px 0 0;
   }
 
   &__wrapper {

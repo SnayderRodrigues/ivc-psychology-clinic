@@ -242,9 +242,6 @@ h3 {
   padding-block: var(--padding-header);
   transition: all 200ms linear;
 }
-.header.opaque {
-  padding-block: 12px 12px;
-}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -254,6 +251,11 @@ h3 {
 .header__logo {
   flex-shrink: 0;
   width: 200px;
+}
+@media (max-width: 31.24875em) {
+  .header__logo {
+    width: 160px;
+  }
 }
 .header__navbar {
   display: flex;
@@ -461,9 +463,10 @@ h3 {
     width: 100%;
   }
 }
-@media (max-width: 31.24875em) {
+@media (max-width: 48.06125em) {
   .hero__headline-wrapper {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
   }
 }
 .hero__headline-wrapper > span {
@@ -524,6 +527,11 @@ h3 {
 .hero__headline-design-element {
   position: absolute;
   z-index: -1;
+}
+@media (max-width: 48.06125em) {
+  .hero__headline-design-element {
+    opacity: 0.8;
+  }
 }
 @media (max-width: 31.24875em) {
   .hero__headline-design-element {
@@ -641,6 +649,11 @@ h3 {
     gap: 4rem;
   }
 }
+@media (max-width: 48.06125em) {
+  .about__content {
+    gap: 2rem;
+  }
+}
 .about__text {
   width: 55%;
 }
@@ -662,6 +675,11 @@ h3 {
 @media (max-width: 56.31125em) {
   .about__image-wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 48.06125em) {
+  .about__image-wrapper {
+    order: -1;
   }
 }
 .about__image:nth-of-type(1) {
@@ -825,6 +843,12 @@ h3 {
     flex-direction: column;
     gap: 4rem;
     padding-bottom: 4rem;
+  }
+}
+@media (max-width: 48.06125em) {
+  .features__wrapper {
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 .features__image-wrapper {
@@ -1087,6 +1111,11 @@ h3 {
     padding: 1.5rem 1.75rem;
   }
 }
+@media (max-width: 31.24875em) {
+  .faq__question {
+    padding: 1rem 1.75rem;
+  }
+}
 .faq__scroll-down-icon {
   width: 12px;
   height: 12px;
@@ -1142,13 +1171,13 @@ h3 {
 .testemonials {
   color: var(--white);
   background-color: var(--dark-purple);
-  padding: var(--padding) 0;
+  padding: var(--padding) 0 0;
   position: relative;
   z-index: 1;
 }
 @media (max-width: 48.06125em) {
   .testemonials {
-    padding: 80px 0;
+    padding: 80px 0 0;
   }
 }
 .testemonials__wrapper {

@@ -35,6 +35,9 @@
       flex-direction: column;
       gap: 4rem;
     }
+    @include u.breakpoint-down(small) {
+      gap: 2rem;
+    }
   }
   &__text {
     width: 55%;
@@ -55,6 +58,9 @@
 
     @include u.breakpoint-down(medium) {
       width: 100%;
+    }
+    @include u.breakpoint-down(small) {
+      order: -1;
     }
   }
   &__image:nth-of-type(1) {

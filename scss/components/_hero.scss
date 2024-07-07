@@ -37,8 +37,9 @@
     @include u.breakpoint-down(midlarge) {
       width: 100%;
     }
-    @include u.breakpoint-down(xsmall) {
-      margin-top: 4rem;
+    @include u.breakpoint-down(small) {
+      margin-top: 2.5rem;
+      margin-bottom: 4rem;
     }
 
     & > span {
@@ -98,6 +99,9 @@
     position: absolute;
     z-index: -1;
 
+    @include u.breakpoint-down(small) {
+      opacity: 0.8;
+    }
     @include u.breakpoint-down(xsmall) {
       display: none;
     }
