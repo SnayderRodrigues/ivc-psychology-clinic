@@ -32,17 +32,21 @@
     gap: 4rem;
 
     @include u.breakpoint-down(midlarge) {
+      grid-template-columns: repeat(3, 1fr);
       gap: 2.5rem;
     }
     @include u.breakpoint-down(medium) {
-      grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 630px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   .card-element {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
 
     img {

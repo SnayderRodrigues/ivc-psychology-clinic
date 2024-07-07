@@ -774,19 +774,25 @@ h3 {
 }
 @media (max-width: 64.06125em) {
   .services__cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
 }
 @media (max-width: 56.31125em) {
   .services__cards-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 630px) {
+  .services__cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .services .card-element {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
 }
 .services .card-element img {
