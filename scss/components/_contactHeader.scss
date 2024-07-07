@@ -22,6 +22,10 @@
   &__logo {
     flex-shrink: 0;
     width: 200px;
+
+    @include u.breakpoint-down(xsmall) {
+      width: 160px;
+    }
   }
   &__navbar {
     display: flex;
@@ -79,7 +83,7 @@
     align-items: center;
     gap: 3rem;
     margin-left: -88.2px;
-    
+
     @include u.breakpoint-down(medium) {
       gap: 1.5rem;
       margin-left: 0;

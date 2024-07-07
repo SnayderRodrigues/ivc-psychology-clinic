@@ -1547,6 +1547,11 @@ h3 {
   flex-shrink: 0;
   width: 200px;
 }
+@media (max-width: 31.24875em) {
+  .contactHeader__logo {
+    width: 160px;
+  }
+}
 .contactHeader__navbar {
   display: flex;
   align-items: center;
@@ -1719,17 +1724,17 @@ h3 {
 
 .contact {
   background-color: var(--background);
-  padding: var(--padding) 0;
+  padding: var(--padding) 0 0;
   position: relative;
 }
 @media (max-width: 48.06125em) {
   .contact {
-    padding: 80px 0;
+    padding: 80px 0 0;
   }
 }
 .contact__wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 @media (max-width: 64.06125em) {
   .contact__wrapper {

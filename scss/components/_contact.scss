@@ -2,17 +2,16 @@
 
 .contact {
   background-color: var(--background);
-  padding: var(--padding) 0;
+  padding: var(--padding) 0 0;
   position: relative;
 
   @include u.breakpoint-down(small) {
-    padding: 80px 0;
+    padding: 80px 0 0;
   }
 
   &__wrapper {
     display: flex;
-    gap: 3rem;
-    
+    gap: 2.5rem;
 
     @include u.breakpoint-down(midlarge) {
       flex-direction: column;
