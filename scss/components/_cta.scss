@@ -26,11 +26,21 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     width: 60%;
 
     @include u.breakpoint-down(small) {
       width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 2.5rem;
+
+      @include u.breakpoint-down(small) {
+        margin-bottom: 1.5rem;
+      }
+    }
+    p {
+      margin-bottom: 1.5rem;
     }
   }
   &__button {
@@ -44,7 +54,7 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
-    
+
     @include u.breakpoint-down(small) {
       object-position: left 20%;
       position: relative;

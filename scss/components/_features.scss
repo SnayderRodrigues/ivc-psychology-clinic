@@ -16,11 +16,11 @@
 
     @include u.breakpoint-down(medium) {
       flex-direction: column;
-      gap: 4rem;
+      gap: 2.5rem;
       padding-bottom: 4rem;
     }
     @include u.breakpoint-down(small) {
-      gap: 2.5rem;
+      gap: 1.5rem;
       padding-bottom: 2.5rem;
     }
   }
@@ -55,7 +55,11 @@
     }
   }
   &__title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__text:first-of-type {
     margin-bottom: 1rem;
